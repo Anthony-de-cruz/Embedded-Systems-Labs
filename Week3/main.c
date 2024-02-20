@@ -27,10 +27,9 @@ while(1){
 	membraneNum = getInput();
 	if(membraneNum != -1){
 		dispNum(membraneNum);
-		wait(10000000);
+		wait(100000);
+		}
 	}
-	}
-	
 	
 }
 
@@ -185,5 +184,5 @@ void resetPins(void) {
 
 void wait(int delay) {
 	int x;
-	for(x = 2; x < delay; x++) {}
+	for(x = 0; x < delay; x++) {}
 }
