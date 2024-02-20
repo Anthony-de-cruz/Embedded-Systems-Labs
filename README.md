@@ -6,3 +6,8 @@ by [TobyTowler](https://github.com/TobyTowler) & [Anthony-de-cruz](https://githu
 # Working notes
 ## Wiring
 - keypad, rightside keypad = D8 - MIND THE GAP
+
+
+# General rules
+- Work in branches
+- Agree on merges/Pull requests
