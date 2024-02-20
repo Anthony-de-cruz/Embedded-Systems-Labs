@@ -25,7 +25,7 @@ int main(void){
 		for(i = 0; i <= 9; i++) {
 			resetPins();
 			dispNum(i);
-			wait(500000); // <- Do not trust
+			wait(400000); // <- Do not trust
 		}
 	}
 }
