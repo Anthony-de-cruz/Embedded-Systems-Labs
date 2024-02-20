@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "stm32f7xx_hal.h"
 #include "stm32f7xx_hal_gpio.h"
+#include "keypad.h"
 
 typedef struct {
 	GPIO_InitTypeDef init;
@@ -16,18 +17,21 @@ void dispNum(int number);
 void wait(int delay);
 
 int main(void){
-	
-	unsigned int i;
+	int membraneNum;
 	
 	initializePins();
+	initializeMembranePins();
 
-	while (1) {
-		for(i = 0; i <= 9; i++) {
-			resetPins();
-			dispNum(i);
-			wait(400000); // <- Do not trust
-		}
+while(1){
+	resetPins();
+	membraneNum = getInput();
+	if(membraneNum != -1){
+		dispNum(membraneNum);
+		wait(10000000);
 	}
+	}
+	
+	
 }
 
 void initializePins(void) {
