@@ -1,5 +1,6 @@
 --cpu Cortex-M7.fp.sp
 ".\objects\main.o"
+".\objects\keypad.o"
 ".\objects\stm32f7xx_hal.o"
 ".\objects\stm32f7xx_hal_cortex.o"
 ".\objects\stm32f7xx_hal_dma.o"
