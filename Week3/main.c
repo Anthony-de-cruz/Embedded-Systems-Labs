@@ -181,5 +181,5 @@ void resetPins(void) {
 
 void wait(int delay) {
 	int x;
-	for(x = 5; x < delay; x++) {}
+	for(x = 2; x < delay; x++) {}
 }
