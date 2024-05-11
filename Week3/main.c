@@ -18,18 +18,35 @@ void wait(int delay);
 
 int main(void){
 	int membraneNum;
+       int x = 0;
 	
 	initializePins();
 	initializeMembranePins();
 
-while(1){
-	resetPins();
-	membraneNum = getInput();
-	if(membraneNum != -1){
-		dispNum(membraneNum);
-		wait(100000);
-		}
-	}
+
+	for(; x < 9; x++){
+        dispNum(x);
+        wait(1000000);
+    }
+    dispNum(x);
+        wait(1000000);
+    dispNum(x);
+        wait(1000000);
+    dispNum(x);
+        wait(1000000);
+    dispNum(x);
+        wait(1000000);
+    dispNum(x);
+        wait(1000000);
+    dispNum(x);
+        wait(1000000);
+    dispNum(x);
+        wait(1000000);
+    dispNum(x);
+        wait(1000000);
+    dispNum(x);
+        wait(1000000);
+    
 	
 }
 
